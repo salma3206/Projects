@@ -1,0 +1,344 @@
+* {
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+li{
+    list-style-type: none;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 20vw;
+    background-color: #1b1711;
+}
+
+.dash {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    height: 8.5vh;
+    color: #f8fbfc;
+}
+
+.fa-border-all{
+    padding-right: 10px;
+}
+
+.list1 {
+    height: 50vh;
+}
+
+.sbbtn{
+    padding: 10px 0;
+    text-align: left;
+    background-color: #1b1711;
+    border: 0;
+    padding: 10px 25px;
+    display: block;
+    color: #f8fbfc;
+    font-size: 20px;
+    width: 20vw;
+}
+
+.sbbtn > i{
+    padding-right: 10px;
+    color: #f8fbfc80;
+}
+
+.sbbtn:hover{
+    background-color: #382f24;
+    border-radius: 5px;
+}
+
+main {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 80vw;
+    height: 100vh;
+}
+
+header{
+    height: 18vh;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+}
+
+.headerup, .headerdown{
+    display: block;
+    display: flex;
+    align-items: flex-start;
+    width: inherit;
+    height: 10vh;
+}
+
+.searchbar, .minipf, .headerbtn{
+    display: inline-block;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.searchbar{
+    width: 60%;
+    justify-content: right;
+}
+
+.fa-magnifying-glass{
+    width: 5%;
+    color: #1b1a1a;
+}
+
+input{
+    padding: 5px 20px;
+    width: 80%;
+    border-radius: 50px;
+    border: none;
+    background-color: #68553c75;
+    margin-right: 5%;
+}
+
+input::placeholder{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+
+input:focus{
+    border: none;
+    outline: none;
+    background-color: #68553c90;
+}
+
+.minipf{
+    justify-content: center;
+    width: 40%;
+}
+
+.fa-bell{
+    font-size: 22px;
+    padding: 10px;
+}
+
+.minipfp{
+    display: inline-block;
+    vertical-align: center;
+    border-radius: 50%;
+    width: 40px;
+    padding: 0 12px;
+}
+
+.pftxt{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.profile{
+    display: inline-block;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 5px;
+}
+
+.pfp{
+    width: 10%;
+    border-radius: 50%;
+    margin: 0 3% 2.5% 8%;
+}
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0;
+    margin-bottom: 2.5%;
+}
+
+.hello{
+    height: 50%;
+    display: flex;
+    align-items: baseline;
+    justify-content: left;
+    font-size: 0.75em;
+    font-weight: 500;
+    padding-bottom: 0;
+}
+
+.username{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 1.4em;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.headerbtn{
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.headerbtn button{
+    margin: 0 20px;
+    padding: 7px;
+    width: 20%;
+    border-radius: 50px;
+    border: none;
+    background-color: #68553c;
+    color: #ffffff;
+}
+
+.headerbtn button:hover{
+    background-color: #3b3123;
+}
+
+.container{
+    background-color: #68553c70;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.leftsec{
+    height: 100%;
+    width: 68%;
+}
+
+.projects, .anntxt, .trendtxt{
+    width: 100%;
+    font-size: 20px;
+    padding: 5px;
+    margin: 0 0 0 25px;
+    font-weight: 500;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 15px; 
+}
+
+.card{
+    background-color: #f8fbfc;
+    padding: 5px;
+    border-radius: 8px;
+    border-left: 8px solid #68553c;
+    margin-left: 15px;
+}
+
+.card h3{
+    margin: 0;
+    padding: 10px 0 0 15px;
+    font-size: 20px;
+}
+
+.card p{
+    font-weight: 300;
+    font-size: 13px;
+    padding: 0 10px 5px 15px;
+}
+
+.cardbtns{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-right: 15px;
+}
+
+.cardbtns button{
+    margin: 0 3px;
+    padding: 8px;
+    border: none;
+    background-color: #f8fbfc ;
+    color: #443c2f;
+}
+
+.cardbtns button:hover{
+    background-color: #68553c70;
+    border-radius: 50%;
+}
+
+.rightsec{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 28%;
+    margin-left: 2%;
+}
+
+.announces{
+    background-color: aqua;
+    margin: 0;
+    border-radius: 8px;
+    background-color: #f8fbfc;
+}
+
+.ann{
+    padding: 5px;
+}
+
+.ann .title{
+    margin: 0;
+    padding: 2px 0 0 15px;
+    font-size: small;
+    font-weight: 700;
+}
+
+.ann .text{
+    font-size: 12px;
+    margin: 0 15px;
+    padding: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #38353580;
+}
+
+.ann .p3{
+    border-bottom: none;
+}
+
+.comments{
+    background-color: #f8fbfc;
+    border-radius: 8px;
+}
+
+.usersec{
+    padding: 8px;
+}
+
+.trendpfp{
+    width: 12%;
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: top;
+    padding: 0 5px;
+}
+
+.trend{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.user{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.comment{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}

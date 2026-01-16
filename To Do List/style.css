@@ -1,0 +1,95 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background: #f8ebff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.container{
+    width: 500px;
+    min-height: 200px;
+    background: linear-gradient(200deg, #af58d8, #fac4f7, #af58d8);
+    background-size: 200% 200%;
+    border-radius: 25px;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 40px;
+    color: #1c0333;
+}
+input{
+    width: 250px;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: 1px solid #441372;
+    font-size: 16px;
+    outline: none;
+    background-color: #f8ebff;
+}
+input::placeholder{
+    color: #1c0333;
+}
+button{
+    margin-top: 20px;
+    border: none;
+    background: #333;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.add, .delete{
+    padding: 11px 20px;
+    border-radius: 10px;
+}
+.add:hover{
+    background-color: #a75cd3b6;
+}
+.delete:hover{
+    background-color: #511185d3;
+}
+.add{
+    background-color: #a75cd3;
+}
+.delete{
+    background-color: #511185;
+}
+.tasks{
+    width: 92%;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 10px;
+    list-style: none;
+    padding: 0 30px;
+
+}
+.unselected{
+    background-color: #bd7bd1a8;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: left;
+    font-weight: 600;
+}
+.selected{
+    background-color: #511185ad;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: left;
+    font-weight: 600;
+}
+li:hover{
+    cursor: pointer;
+    filter: brightness(0.9);
+}
